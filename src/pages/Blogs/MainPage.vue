@@ -148,7 +148,7 @@ import { useBlogMainPage } from '@/composables/useBlogMainPage'
 const { blogs, loading, error, fetchBlogs, deleteItem, editItem, form,
   dialogVisible, openPostForm } = useBlogMainPage()
 
-const userInformation = JSON.parse(localStorage.getItem('user'))
+const userInformation = localStorage.getItem('user')? JSON.parse(localStorage.getItem('user')) :{}
 
 import { ElLoading, ElMessage } from 'element-plus'
 import api from '@/services/api.js'

@@ -43,7 +43,7 @@ export function useBlogMainPage() {
         contentRu: response.data.content.content.ru,
         contentUz: response.data.content.content.uz,
         isPublished: response.data.content.isPublished,
-        userId: JSON.parse(localStorage.getItem('user')).Id,
+        userId: localStorage.getItem('user') ? JSON.parse(localStorage.getItem('user')).Id : null,
       }
       console.log("form", form.value)
       openPostForm()

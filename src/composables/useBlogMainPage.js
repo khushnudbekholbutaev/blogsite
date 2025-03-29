@@ -25,7 +25,7 @@ export function useBlogMainPage() {
     contentRu: '',
     contentUz: '',
     isPublished: true,
-    userId: JSON.parse(localStorage.getItem('user')).Id,
+    userId: localStorage.getItem('user') ? JSON.parse(localStorage.getItem('user')).Id : null,
   })
 
   async function editItem(post) {

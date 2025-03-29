@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@import "tailwindcss/utilities";
+.el-message {
+    top: 20px !important;  /* Adjust as needed */
+    right: -70px !important;
+    left: auto !important;
+}
+.dots{
+    width: 24px !important;
+    height: 24px !important;
+    position: absolute !important;
+    top: 12px;
+    right: 12px;
+    cursor: pointer ;
+}
+
